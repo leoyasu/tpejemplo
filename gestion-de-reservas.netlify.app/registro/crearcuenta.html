@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from gestion-de-reservas.netlify.app/registro/crearcuenta.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 02:32:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset='utf-8'>
+    <title>Gestion de reservas</title>
+    <link rel='stylesheet' type='text/css'  href='../inicio.css'>
+    <link rel='stylesheet' type='text/css'  href='registro.css'>
+   
+</head>
+<body>
+    
+    <nav >
+        <li><a class="inicio" href="../index-2.html"> Inicio</a></li>
+        <li><a class="reg" href="crearcuenta.html"> Crear cuenta</a></li>
+        <li><a class="reg"  href="../login/iniciarsesion.html"> Iniciar sesion</a></li>
+        
+    </nav>
+   
+    <h1 id="titulo"> Crea tu cuenta:</h1>
+    <form id="form">
+        <div class="grid" id="contenedor-formulario-principal" >
+            <span > Nombre: </span>
+            <input id="rnombre" type="text" required> 
+            <span> Apellido:</span>
+            <input id="rapellido" type="text" required /> 
+            <span > Domicilio:</span>
+            <input id="rdomicilio" type="text" required > 
+            <span >Dni:</span>
+            <input id="rdni" type="text" required > 
+            <span> Fecha de nacimiento:</span>
+            <input  type="date" max="2003-01-01" required > 
+            <span> Cobertura medica:</span>
+                        <select class="cobertura"name="select" required >
+                            <option value="1">Prepaga</option>
+                            <option value="2"> Obra social</option>
+                            <option value="3"> Particular</option>
+                        </select>
+           <!-- <input  type="text"> -->
+            <span> Tipo de plan medico:</span>
+            <input  type="text"> 
+            <label>Forma de pago:</label>
+            <div class="radiobuttonflex">
+                
+                <input type="button" id="tarjeta-debito" onclick="formularioTarjeta()" value="Tarjeta de credito"/>
+                <input type="button" id="tarjeta-mercado" onclick="formularioMercadopago()" value="Mercado Pago"/>
+                <input type="button" id="tarjeta-bancaria" onclick="formularioBancaria()" value="Cuenta bancaria"/>
+            </div>
+            <span> Email:</span>
+            <input class="input-registro" type="email" id="email" required />
+            <span> Contraseña:</span>
+            <input class="input-registro" type="password" id="contraseña" required />
+            <input type="submit" onclick="registrar()" class="boton" value="Registrarse" />
+         </div>
+
+         <div id="contenedor-formulario-tarjeta"class="grid" style="display:none">
+           
+            <span> numero de tarjeta</span>
+            <input id="tarjeta" type="number" placeholder="16 numeros" min="0000000000000000" oninput="if(this.value.length > this.min.length) this.value = this.value.slice(0, this.min.length);" required/>
+            <span> nombre y apellido </span>
+            <input type="text" id="tnombres" onclick="" placeholder="tal cual este en la tarjeta" required/> 
+            <span> fecha de expiracion</span>
+            <input id="fecha" type="date"  min="2020-01-01"   max="2040-12-01" required/>   
+            <span> codigo de seguridad</span>
+            <input id="codigo" type="number" placeholder="111" min="000" max="999" oninput="if(this.value.length > this.min.length) this.value = this.value.slice(0, this.min.length);" required/>          
+
+            <input type="submit" onclick="validartarjeta()" value="confirmar" class="boton"  />
+            <div></div>
+            <input type="submit" onclick="volveratras()" value="atras" class="btn-atras"/>
+       </div>
+
+       <div id="contenedor-formulario-tarjeta-mercado"class="grid" style="display:none">
+           
+        <span> Cuenta</span>
+        <input id="cuenta-mercado" type="email" required/>
+        <span>Contraseña </span>
+        <input  type="password" required/> 
+        
+        <input type="submit" onclick="validarTarjetaMercado()" value="confirmar" class="boton"  />
+        <div></div>
+        <input type="submit" onclick="volveratras()" value="atras" class="btn-atras"/>
+   </div>
+
+
+   <div id="contenedor-formulario-tarjeta-bancaria"class="grid" style="display:none">
+           
+    <span> Numero de cuenta bancaria:</span>
+    <input id="numero-bancaria"type="number" required/>
+    <span> nombre de titular:</span>
+    <input id="nombre-bancaria"type="text" required/>
+   
+    
+    <input type="submit" onclick="validarTarjetaBancaria()" value="confirmar" class="boton"  />
+    <div></div>
+    <input type="submit" onclick="volveratras()" value="atras" class="btn-atras"/>
+</div>
+
+
+
+
+    </form>
+        
+
+    <script src=registro.js></script>
+    <script src="../../unpkg.com/sweetalert%402.1.2/dist/sweetalert.min.js"></script>
+
+</body>
+
+<!-- Mirrored from gestion-de-reservas.netlify.app/registro/crearcuenta.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 02:32:17 GMT -->
+</html>

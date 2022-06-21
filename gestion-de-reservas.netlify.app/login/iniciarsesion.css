@@ -1,0 +1,105 @@
+
+
+.entrada ,.boton{
+    width: 100%;
+  padding: 12px 20px;
+  box-sizing:border-box;
+  margin: 8px 0;
+  border: none;
+}
+
+
+#form{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background: #4f84c2b4;
+    width: 400px;
+    padding: 40px;
+}
+
+.boton{
+    background-color:#083f7e;
+    color:white;
+    
+}
+
+.boton:hover{
+    background-color: #0c325e;
+}
+
+
+#btnRecuperarContraseña{
+    height: 40px;
+    background-color: #083f7e;
+    color:white;
+    margin-top:10px;
+    border:none;
+    outline:none;
+    padding:10px;
+ 
+}
+#btnRecuperarContraseña:hover{
+background-color:#0c325e; 
+}
+
+#btnVolver,#btnContraseñaOlvidada{
+    border:none;
+    background: none;
+    outline: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+
+ }
+    
+
+#btnVolver:hover{
+   text-decoration:underline;
+}
+
+#btnContraseñaOlvidada{
+    font-weight: bold;
+ }
+
+#btnContraseñaOlvidada:hover{
+    text-decoration:underline;
+    
+ }
+
+
+
+#emailRecuperarContraseña{
+    height: 40px;
+    border:none;
+    margin-top: 10px;
+}
+#titulo{
+    text-align:center;
+}
+
+#contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4f84c2b4;
+    width: 400px;
+    height: 60px;
+    margin-top:20px;
+}
+
+#contenedor2{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#infoContraseña{
+    color:#083f7e;
+    background: white;
+    padding:10px;
+    border: 2px solid #083f7e;
+}

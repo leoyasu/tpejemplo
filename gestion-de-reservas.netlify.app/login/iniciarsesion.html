@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from gestion-de-reservas.netlify.app/login/iniciarsesion by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 02:32:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset='utf-8'>
+    <title>Gestion de reservas</title>
+    <link rel='stylesheet' type='text/css'  href='../inicio.css'>
+    <link rel='stylesheet' type='text/css'  href='iniciarsesion.css'>
+   
+</head>
+<body>
+    
+    <nav >
+       
+        <li><a class="inicio" href="../index-2.html"> Inicio</a></li>
+        <li><a class="reg" href="../registro/crearcuenta.html"> Crear cuenta</a></li>
+        <li><a class="reg"  href="iniciarsesion.html"> Iniciar sesion</a></li>
+    </nav>
+
+    
+         <h1 id="titulo"> Inicia sesion</h1>
+    <div id="form">
+      
+        <input class="entrada" id="email" type="text" placeholder="Ingrese su email " required/>
+        <input class="entrada" id="contraseña" type="password" placeholder="Ingrese su contraseña" required/>
+
+        <input id="btnRegistrarse" type="button" onclick="login()" class="boton" value="Iniciar sesion" />
+       
+        <button id="btnContraseñaOlvidada" onclick="ocultarYmostrar()" > Olvidaste tu contraseña?</button>  
+    
+    </div>
+         
+     <div id="contenedor" style="display:none">
+           
+             <input id="emailRecuperarContraseña" type="email" placeholder="Ingrese su email" required/>
+             <input type="submit" id="btnRecuperarContraseña" onclick="infoContraseña()" value="Recuperar" />
+            
+           
+     </div>
+
+       <div id="contenedor2" style="display:none"> 
+             <button id="btnVolver"onclick="ocultarYmostrar()"  > Volver atras </button>
+           
+    </div>
+
+      
+
+
+              
+        
+    <script src='iniciarsesion.js'></script>
+    <script src="../../unpkg.com/sweetalert%402.1.2/dist/sweetalert.min.js"></script>
+
+</body>
+
+<!-- Mirrored from gestion-de-reservas.netlify.app/login/iniciarsesion by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 02:32:18 GMT -->
+</html>

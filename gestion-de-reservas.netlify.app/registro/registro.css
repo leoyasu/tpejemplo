@@ -1,0 +1,92 @@
+.grid{
+    display: grid;
+    grid-template-columns: 200px 400px;
+   
+}
+
+form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #4f84c2b4;
+    width: 700px;
+    padding: 40px;
+    font-weight: bold;
+}
+
+span{
+    font-size: 19px;
+}
+
+h1{
+    text-align: center;
+    font-size: 25px;
+}
+
+.boton{
+    width: 310%;
+    padding: 12px 20px;
+    box-sizing:border-box;
+    margin: 8px 0;
+    border: none;
+    color: white; 
+}
+
+.boton{
+    background-color: #083f7e;
+    
+}
+
+.boton:hover{
+    background-color: #0c325e;
+}
+input{
+    border: none;
+    width: 100%;
+    
+}
+
+.radiobuttonflex{
+    display: flex;
+/*  flex-direction: column;*/
+}
+
+.radiobuttonflex, input{
+    margin-left: 10px;
+    width: 200px;
+}
+
+.form-tarjeta{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.fomr-tarjeta,input{
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+.btn-atras{
+    width: 100px;
+}
+
+
+#tarjeta-debito,#tarjeta-mercado,#tarjeta-bancaria{
+    background: #233f7b;
+    border: 1px solid black;
+    margin-top: 10px;
+    color:white;
+}
+
+#tarjeta-debito:hover ,#tarjeta-mercado:hover,#tarjeta-bancaria:hover{
+    background: #3377c5;
+}
+
+.cobertura{
+    margin-bottom: 12px;
+}
+
+#tarjeta-debito:active ,#tarjeta-mercado:active,#tarjeta-bancaria:active{
+    background: #04214d;
+}
